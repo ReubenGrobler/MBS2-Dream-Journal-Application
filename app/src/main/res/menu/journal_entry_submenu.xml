@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/deleteEntry"
+        android:title="Delete"/>
+
+    <item
+        android:id="@+id/viewDetailedInfo"
+        android:title="View Detailed Information"/>
+
+    <item
+        android:id="@+id/pinEntry"
+        android:title="Pin"/>
+
+    <item
+        android:id="@+id/imageThumbnail"
+        android:title="Set Thumbnail"/>
+
+    <item
+        android:id="@+id/removeImageThumbnail"
+        android:title="Remove Thumbnail"
+        />
+
+</menu>

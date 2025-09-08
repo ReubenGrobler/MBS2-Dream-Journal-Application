@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Dream Journal Application</string>
+    <string name="creates_a_new_journal_entry">Creates a new journal entry</string>
+</resources>
