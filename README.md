@@ -22,7 +22,7 @@ cd MBS2-Dream-Journal-Application
 
 ### Launching the APK
 
-1. Download the APK from this repository
+1. Download `Dream_Journal_Application.apk` from this repository
 2. Transfer the APK to your mobile device
 3. Open the APK and start installation
 4. Click on the installed app to run it
