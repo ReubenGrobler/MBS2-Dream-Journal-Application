@@ -40,5 +40,6 @@ Optionally, it is possible to run tests via command line. To do so, it is necess
 1. Open Command Prompt and navigate to the directory of the project. An example path is `C:\Users\your_username\AndroidStudioProjects\DreamJournalApplication`
 2. Run `gradlew.bat test`. All tests will then be executed.
 
-### Disclaimer
+## Disclaimer
 There is no default test cases included with the project, meaning that the user starts with a blank slate. However, by using recognisable components and icons as found in mainstream journalling applications, the app should be intuitive enough for the average user to navigate their way across the UI.
+Please note that the development of this app was based off of Android 8.0 (API 26). As such, some implementations of the app might be perceived as deprecated in newer versions of Android.
