@@ -1,4 +1,4 @@
-# Dream Journal Mobile Application v1.0.0
+# Dream Journal Mobile Application v1.0.1
 ## Developed by Reuben Grobler
 
 This is a proof of concept for a mobile application developed for the course ___Mobile Software Engineering 2___ for ___IU University of Applied Sciences___.
