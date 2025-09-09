@@ -102,7 +102,7 @@ public class MainActivity extends AppCompatActivity {
         //the app creates a new journal entry, as well as allowing the
         //app the scroll vertically should the amount of journal entries
         //exceed the screen's space. This is done by calling the selectNewEntryName()
-        //function, which prompts the user with a popup.
+        //method, which prompts the user with a popup.
         addNewJournalEntry.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -131,7 +131,7 @@ public class MainActivity extends AppCompatActivity {
         loadJournalEntries();
     }
 
-    //This function creates a new journal entry by using the predefined layout in
+    //This method creates a new journal entry by using the predefined layout in
     //journal_entry.xml and adding it to the home screen. A boolean value is used
     //to determine whether displaying a given entry on the home screen should
     //also save the entry to the JSON file, since this method is also used when loading
@@ -396,7 +396,7 @@ public class MainActivity extends AppCompatActivity {
         journalEntryContainer.addView(journalEntry);
     }
 
-    //This function prompts the user with a popup window
+    //This method prompts the user with a popup window
     //to ask them for a name when a new journal entry is created.
     //Once the name has been inputted, the displayJournalEntry()
     // method is called to create and display this new entry.
@@ -437,9 +437,9 @@ public class MainActivity extends AppCompatActivity {
         }).create().show();
     }
 
-    //This function checks the JSON file for any existing journal entries,
+    //This method checks the JSON file for any existing journal entries,
     //then displays them on the home screen. If the JSON file does not exist,
-    //then no action is taken and the function ends.
+    //then no action is taken and the method ends.
     private void loadJournalEntries() {
         File file = new File(this.getFilesDir(), "journal_entries.json");
         if (!file.exists()) {
