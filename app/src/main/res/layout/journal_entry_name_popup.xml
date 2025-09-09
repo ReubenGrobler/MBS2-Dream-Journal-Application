@@ -23,5 +23,6 @@
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
         android:paddingBottom="7.5dp" 
+        android:textColor="@color/black"
         android:textColorHint="#838383"/>
 </LinearLayout>
