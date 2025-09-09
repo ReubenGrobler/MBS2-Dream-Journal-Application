@@ -32,12 +32,12 @@ public class ManagingJournalEntries {
         this.file_name = file_name;
     }
 
-    //This function stores a newly created journal entry within a JSON
+    //This method stores a newly created journal entry within a JSON
     //file should the FAB in the main activity be clicked. The values stored
     //per entry are a unique ID, the title of the journal entry, and any text
     //within the entry. Due to the inability to add text during journal creation,
-    //no value is stored. The unique ID is returned by the function as entryID
-    //to be reused in other functions.
+    //no value is stored. The unique ID is returned by the method as entryID
+    //to be reused in other methods.
     public int saveJournalEntryCreation(Context context, String title) {
 
         //Creates JSON structures that will handle JSON parsing. journalFileContent
@@ -118,10 +118,10 @@ public class ManagingJournalEntries {
         return entryID;
     }
 
-    //This function updates the name of an existing journal entry within the JSON file
+    //This method updates the name of an existing journal entry within the JSON file
     //when the user clicks the edit icon in the journal entry display.
     public void updateJournalEntryName(Context context, int ID, String newTitle) {
-        //If the JSON file does not exist, the function ends with nothing being changed.
+        //If the JSON file does not exist, the method ends with nothing being changed.
         File file = new File(context.getFilesDir(), file_name);
         if (!file.exists()) {
             return;
@@ -162,9 +162,9 @@ public class ManagingJournalEntries {
 
     }
 
-    //This function deletes any given journal entry via the
+    //This method deletes any given journal entry via the
     //submenu on the journal entry's view. It does so by comparing
-    //all IDs within the JSON file to the ID that was passed to the function,
+    //all IDs within the JSON file to the ID that was passed to the method,
     //then deleting the entry in the JSON file.
     public void deleteJournalEntry(Context context, int ID) {
         File file = new File(context.getFilesDir(), file_name);
@@ -206,7 +206,7 @@ public class ManagingJournalEntries {
     }
 
 
-    //This function updates the image thumbnail path of an existing journal entry within
+    //This method updates the image thumbnail path of an existing journal entry within
     //the JSON file when the user adds or changes said thumbnail within the entry display.
     //After reading the JSON file to determine the matching journal entry via its unique ID,
     //the image path is updated accordingly.
@@ -251,7 +251,7 @@ public class ManagingJournalEntries {
     }
 
 
-    //This function updates the pinned attribute of a journal entry within
+    //This method updates the pinned attribute of a journal entry within
     //the JSON file. It achieves this by reading the JSON file, searching for the
     //entry with the matching ID, updating the pinned attribute, and saving it.
     public void updateJournalEntryPinned(Context context, int entryID, boolean pinned) {
@@ -288,7 +288,7 @@ public class ManagingJournalEntries {
     }
 
 
-    //This function checks whether a journal entry is pinned or not by reading
+    //This method checks whether a journal entry is pinned or not by reading
     //the JSON file, searching for the entry with the matching ID, and returning
     //a boolean value representing the pinned status of the entry.
     public boolean isEntryPinned(Context context, int entryID) {
@@ -320,7 +320,7 @@ public class ManagingJournalEntries {
     }
 
 
-    //This function saves any text inputted by the user within a journal entry's
+    //This method saves any text inputted by the user within a journal entry's
     //EditText field. It does so by reading the JSON file, searching for the entry
     //with the matching ID, updating the text value, and saving it. By doing so,
     //the JSON file is also updated with the last edited date and time.
@@ -361,7 +361,7 @@ public class ManagingJournalEntries {
     }
 
 
-    //This function saves any media attachments (i.e., images and videos) uploaded by
+    //This method saves any media attachments (i.e., images and videos) uploaded by
     //the user within a journal entry. It does so by reading the JSON file, searching
     //for the entry with the matching ID, updating the media array, and saving it.
     public void saveJournalEntryMedia(Context context, int entryID, JSONArray mediaArray) {
