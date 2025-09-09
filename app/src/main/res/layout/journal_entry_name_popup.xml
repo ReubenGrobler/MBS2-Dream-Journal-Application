@@ -22,5 +22,6 @@
         android:maxLength="35"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
-        android:paddingBottom="7.5dp" />
+        android:paddingBottom="7.5dp" 
+        android:textColorHint="#838383"/>
 </LinearLayout>
